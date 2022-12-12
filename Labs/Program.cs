@@ -105,6 +105,27 @@ namespace Labs
 
             laba_3_4.Array();
 
+            Console.WriteLine("\n\tЛобораторная работа 3. Задание 5");
+
+            Laba_3_5 laba_3_5 = new Laba_3_5();
+
+            laba_3_5.Сharacteristic();
+
+            Console.WriteLine("\n\tЛобораторная работа 3. Задание 6");
+
+            Laba_3_6 laba_3_6 = new Laba_3_6();
+
+            string sourceText = @"Колличество слов в предложении";
+            int countWords = laba_3_6.CountWords(sourceText);
+            Console.WriteLine("Исходный текст - " + sourceText + "");
+            Console.WriteLine("Кол-во слов:\t {0}", countWords);
+
+            Console.WriteLine("\n\tЛобораторная работа 3. Задание 7");
+
+            Laba_3_7 laba_3_7 = new Laba_3_7();
+
+            laba_3_7.Text();
+
             #endregion
 
         }
