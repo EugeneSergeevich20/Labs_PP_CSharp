@@ -30,6 +30,11 @@ namespace Labs.Laba_3
 
                 StringBuilder sb = new StringBuilder(str);
 
+                /*
+                 В этом цикле, мы перебераем строку с помощью класса StringBuilder
+                 И если мы обнаружили в строке символ ';', то мы меняем его на символ '_'
+                 */
+
                 for (int i = 0; i < sb.Length; i++)
                 {
                     if (sb[i] == ';')
