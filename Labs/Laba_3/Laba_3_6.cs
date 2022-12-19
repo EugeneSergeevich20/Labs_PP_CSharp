@@ -6,15 +6,18 @@ namespace Labs.Laba_3
 {
     internal class Laba_3_6
     {
-        
+
         public int CountWords(string source)
         {
-            int index = source.IndexOfAny(new char[] { '\r', '\n' });
-            if (index != -1)
+            int count = 0;
+            for (int i = 0; i < source.Length; i++)
             {
-                source = source.Remove(index);
+                if (source[i].Equals(' ') || i == source.Length - 1)
+                {
+                    count++;
+                }
             }
-            return source.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length;
+            return count;
         }
 
     }

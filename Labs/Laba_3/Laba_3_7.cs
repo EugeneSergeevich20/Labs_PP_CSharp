@@ -9,6 +9,7 @@ namespace Labs.Laba_3
 
         static char[] dict = "abcdefgh1234567?!;".ToCharArray();
         static Random rand = new Random();
+
         public string MakeString(int len)
         {
             char[] letters = new char[len];
@@ -21,14 +22,24 @@ namespace Labs.Laba_3
         {
             Console.Write("Length: ");
             int len = Convert.ToInt32(Console.ReadLine());
+
             if (len > 0)
             {
                 string str = MakeString(len);
                 Console.WriteLine("String:  " + str);
-                StringBuilder sb = new StringBuilder(len);
-                foreach (char c in str.ToCharArray())
-                    sb.Append(c == ';' ? '_' : c);
+
+                StringBuilder sb = new StringBuilder(str);
+
+                for (int i = 0; i < sb.Length; i++)
+                {
+                    if (sb[i] == ';')
+                    {
+                        sb[i] = '_';
+                    }
+                }
+
                 str = sb.ToString();
+
                 Console.WriteLine("Changed: " + str);
             }
             else

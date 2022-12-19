@@ -1,6 +1,7 @@
 ﻿using Labs.Laba_1;
 using Labs.Laba_2;
 using Labs.Laba_3;
+using Labs.Laba_4;
 using System;
 using System.Diagnostics;
 
@@ -125,6 +126,28 @@ namespace Labs
             Laba_3_7 laba_3_7 = new Laba_3_7();
 
             laba_3_7.Text();
+
+            Console.WriteLine("\n\tЛобораторная работа 3. Задание 8");
+
+            Laba_3_8 laba_3_8 = new Laba_3_8();
+
+            laba_3_8.Eighth();
+
+            #endregion
+
+            #region laba4
+
+            /*Console.WriteLine("\n\tЛобораторная работа 4. Задание 1");
+
+            Laba_4_1 message = new Laba_4_1();
+            Console.Write("Введите размер сообщения: ");
+            message.SetsizeofMessage(Convert.ToString(Console.ReadLine()));
+            Console.WriteLine("\n");
+            Console.Write("Введите размер одного пакета: ");
+            message.Setsizeof1Packet(Convert.ToString(Console.ReadLine()));*/
+
+
+            Console.ReadKey();
 
             #endregion
 

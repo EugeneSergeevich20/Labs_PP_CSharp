@@ -12,13 +12,13 @@ namespace Labs.Laba_3
         {
             Console.WriteLine("No sorted");
             Output(array1);
-            Array.Sort(array1);
+            Sort(array1);
             Console.WriteLine("Sorted");
             Output(array1);
 
             Console.WriteLine("No sorted");
             Output(array2);
-            Array.Sort(array2);
+            Sort(array2);
             Console.WriteLine("Sorted");
             Output(array2);
 
@@ -26,7 +26,7 @@ namespace Labs.Laba_3
 
             Console.WriteLine("No sorted");
             Output(array3);
-            Array.Sort(array3);
+            Sort(array3);
             Console.WriteLine("Sorted");
             Output(array3);
         }
@@ -38,6 +38,22 @@ namespace Labs.Laba_3
                 Console.Write(num + " ");
             }
             Console.WriteLine("\n");
+        }
+
+        static void Sort(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                for (int j = 0; j < array.Length - 1; j++)
+                {
+                    if (array[j] > array[j + 1])
+                    {
+                        int t = array[j + 1];
+                        array[j + 1] = array[j];
+                        array[j] = t;
+                    }
+                }
+            }
         }
 
         
